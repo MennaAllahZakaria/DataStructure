@@ -76,7 +76,7 @@ void Stack::clear(){
 void Stack::push(int val){
 if ( isFull()){
 
-int temp[sz*2];
+int *temp=new int[sz*2];
 for ( int idx=0;idx<sz;idx++)
 temp[idx]=st[idx];
 

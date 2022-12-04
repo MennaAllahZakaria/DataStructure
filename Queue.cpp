@@ -31,6 +31,7 @@ public:
     int max_size();
     bool isEmpty();
     bool isFull();
+    int search(int target);
 };
 
 /////////////////////////Functions Definition\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -119,13 +120,24 @@ int Queue::peek(){
 return arr[front];
 }
 
+
+//--------------------------------------------\\
+// search in the queue if the target in the queue return it's index if not return -1 
+int Queue::search(int target){
+
+  for ( int i=0;i<capacity;i++){
+    if ( arr[i]==target) return i;
+  }
+return -1;
+}
 int main(){
 
 
 Queue q;
 q.enqueue(15);
 q.dequeue();
-
+ q.enqueue(6);
+cout<<q.search(5);
 cout<<"the max size of queue is = "<<q.max_size();
 cout<<"the current size of queue is = "<<q.size();
 

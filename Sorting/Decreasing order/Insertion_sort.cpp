@@ -1,3 +1,5 @@
+ //         اللهم لا سهل الا ما جعلته سهلا و انت تجعل الصعب ان شئت سهل        
+
 #include <bits/stdc++.h> 
 #define nl            "\n"
 #define sz(x)         int(x.size())

@@ -8,15 +8,6 @@
 
  using namespace std;
 
-  void menna_allah(){
- ios_base ::sync_with_stdio(false),cin.tie(nullptr), cout.tie(nullptr);
-
-  #ifndef ONLINE_JUDGE
-  freopen("input3.txt","r", stdin), freopen ("output3.txt", "w", stdout);
-  #endif
-
-}
-
 template<typename T = int> istream& operator>>(istream& in, vector<T>& v){
     for (T& i : v) in >> i;
     return in;
